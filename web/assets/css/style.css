@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  height: 768px;
+}
+nav {
+  padding: 20px;
+  background-color: #f89524;
+  box-shadow: 20px 11px 13px -5px rgba(0, 0, 0, 0.1);
+}
+nav .logo-container,
+nav .nav-component {
+  width: 100%;
+}
+nav .logo-container img,
+nav .nav-component img {
+  width: 100px;
+  align-self: center;
+  border-radius: 50%;
+}
+nav .logo-container .system-name,
+nav .nav-component .system-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+nav .nav-component .guest-feature-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+}
+nav .nav-component ul {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+nav .nav-component ul .feature-link {
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #fff;
+}
+nav .nav-component ul .feature-link li {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+nav .nav-component ul .feature-link li:hover {
+  background-color: #c2830f;
+}
+nav .nav-component select {
+  min-height: 36px;
+  max-width: 200px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+nav .nav-component .g-signin2 {
+  border-radius: 8px;
+}
+nav .nav-component .text-note {
+  color: #f5eeee;
+}
+nav .nav-component .staff-sign-in {
+  color: #ffffff;
+}
+nav .nav-component .active {
+  background-color: #c2830f;
+  color: #fff;
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+#main-container .user-info {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  align-self: flex-end;
+  padding-right: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  cursor: pointer;
+}
+#main-container .user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+#main-container .user-info #btn-sign-out {
+  color: #2c68d6;
+  display: flex;
+  align-self: center;
+}
+#main-container .user-info #btn-sign-out:hover {
+  text-decoration: underline;
+}
+#main-container .user-info #info-listing {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  margin-top: 50px;
+  right: 20px;
+  border: 1px solid #aaaaaa;
+  border-radius: 8px;
+  padding: 10px;
+}
+#main-container .user-info #info-listing ul {
+  list-style-type: none;
+  width: 200px;
+}
+#main-container .title-container {
+  background-color: #f89524;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #fff;
+  align-self: center;
+}
+#main-container .title-container .home-title {
+  display: flex;
+  font-size: 36px;
+  font-weight: 700;
+  justify-content: center;
+  align-self: center;
+  width: 600px;
+  flex-wrap: wrap;
+}
+#main-container .carousel .carousel-inner .carousel-item img {
+  width: auto;
+  height: 760px;
+  flex: 1;
+}
+#main-container table {
+  width: 95%;
+  border: 1px solid #e2d7d7;
+  align-self: center;
+}
+#main-container table .thead {
+  background-color: #ffac75;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+#main-container table .thead td {
+  text-align: center;
+}
+#main-container table .t-row .cb-container {
+  text-align: center;
+}
+#main-container table .t-row td {
+  text-align: center;
+}
+#main-container table .t-row .selection {
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+#main-container table .t-row:hover {
+  background-color: #faefef;
+}
+#main-container table tr,
+#main-container table td {
+  border: 1px solid #d6c3c3;
+}
+#main-container table .left-col {
+  width: 150px;
+  font-weight: 600;
+}
+#main-container #subject-code {
+  height: 40px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+#main-container #searching-selection {
+  height: 40px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+#main-container #btn-search {
+  border: white;
+  background-color: #3aa03a;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+#main-container #btn-search:hover {
+  background-color: #52cc52;
+}
+#main-container .form-container form {
+  background-color: #e4e4e4;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  height: 100%;
+}
+#main-container .form-container form .label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  color: #3590da;
+}
+#main-container .form-container form .form-controller {
+  margin-bottom: 20px;
+}
+#main-container .form-container form .form-controller input {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  padding-left: 20px;
+}
+#main-container .form-container form .form-controller textarea {
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 12px;
+  border: none;
+  line-height: 22px;
+  font-size: 16px;
+}
+#main-container .form-container form .form-controller .radio-btn {
+  width: 20px !important;
+  height: auto;
+}
+#main-container .form-container form #btn-submit {
+  border: none;
+  background-color: #3389eb;
+  padding: 15px 40px 15px 40px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  float: right;
+}
+#main-container .form-container form #btn-submit:hover {
+  background-color: #539df1;
+}
+.modal {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.modal #modal-signin {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 12px;
+}
+.modal #modal-signin .input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.modal #modal-signin .input-container label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.modal #modal-signin .input-container .input {
+  border: 1px solid #bebebe;
+  border-radius: 8px;
+  padding: 10px;
+}
+.modal #modal-signin .input-container .input:focus {
+  border-color: pink;
+}
+.modal #modal-signin .btn-submit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c811c;
+  border: none;
+  padding: 10px 0 10px 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.modal #modal-signin .btn-submit:hover {
+  background-color: #40a540;
+}
